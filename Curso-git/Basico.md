@@ -65,11 +65,15 @@ al momento de crearse se posan en el ultimo commit iD de la rama principal, el H
 
 -- git branch (nombre de la rama)
 
--- git brancg -r (ver ramas remotas de repos clonados)
+-- git branch -r (ver ramas remotas de repos clonados)
 
 -- git branch -d (nombre) para eliminar rama
 
 -- git checkout o git switch para cambiar entre ramas
+
+-- git branch --merged ramas funcinadas
+
+-- git branch --no merged no fuincionadas
 
 ## Fusionar
 
@@ -89,3 +93,13 @@ origin/main(solo seguimiento remoto)
 -- git fetch (alcanzar sin aplicar cambios)
 
 -- git pull (alcanza y aplicar cambios)
+
+## Mostrar commits
+
+-- git log --oneline
+
+-- git log --graph
+
+-- git log --all
+
+--  git log --graph --oneline --all
