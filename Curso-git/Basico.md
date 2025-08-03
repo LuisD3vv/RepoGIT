@@ -6,11 +6,11 @@ git --version version de git
 git config --global user.name
 git config --global user.email
 
-## inicializar el repositorio.
+## Inicializar el repositorio.
 
 -- git init
 
-## al usarlo se crea el stagging area
+## Al usarlo se crea el stagging area
 
 ## Conocer el area stagging
 
@@ -31,16 +31,22 @@ git config --global user.email
 -- git commit -am "Mensaje"
 
 // enviar al repositorio remoto
-## ingresar repositrorio remoto
+
+## Ingresar repositrorio remoto
+
 -- git remote add origin (origen)
 -- git remote remove origin
-## cambiar el nombre de la rama principal
 
-git branch -m MAIN
+## Cambiar el nombre de la rama
+
+-- git branch -m MAIN
 
 ## Este solo se ejecuta una ves, cuando cambiamos de remoto le damos el parametro -u origin main, despues solo sera git push
 
-git push -u origin main
+-- git push -u origin main
+
+
+-- git push origin head (creara una nueva rama)
 
 ## Modificar y ver diferencias
 
@@ -53,11 +59,17 @@ git push -u origin main
 -- la derecha significa desde que linea hasta que linea
 aplico el cambio
 
-// cambios en el area de stage
+## cambios en el area de stage
 -- git diff --staged
 
-// mostrar lineas que cambiaron sin ver contenido
+## mostrar lineas que cambiaron sin ver contenido
 -- git diff stat
+
+-- git show (commit id)
+
+## ver el archivo que se agrego con ese commit id
+
+-- git show (commit id):rama
 
 ## Ramificacion
 >Las ramas solo pueden crearse desde una rama existente.
@@ -75,6 +87,8 @@ al momento de crearse se posan en el ultimo commit iD de la rama principal, el H
 
 -- git branch --no merged no fuincionadas
 
+-- git branch --all
+
 ## Fusionar
 
 --Git merge (ramas)
@@ -84,7 +98,7 @@ funcion de avance rapido
 al momento de fusionarse se recimienda eliminar la rama 
 cuando se crea una rama, esta rama es una copia del ultimo commit id, es decir tendra su contenido
 
-## AL momento de la clonacion, git crea otra rama llamada origin main
+## Al momento de la clonacion, git crea otra rama llamada origin main
 
 origin/main(solo seguimiento remoto)
 
@@ -102,4 +116,11 @@ origin/main(solo seguimiento remoto)
 
 -- git log --all
 
---  git log --graph --oneline --all
+-- git log --all --stat (que archivos fueron impactados)
+
+-- git log --graph --oneline --all
+
+
+## Eliminar archivo del worksplace y del stagging
+
+-- git rm (file)
