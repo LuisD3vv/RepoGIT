@@ -124,3 +124,13 @@ origin/main(solo seguimiento remoto)
 ## Eliminar archivo del worksplace y del stagging
 
 -- git rm (file)
+
+
+## Trabjar en conjunto
+
+-- fork (accion de github solamente) crear una copia personal de un repositorio sin afectar al principal(es util cuando no podemos crear ramas en el principal)
+
+
+## Que es un pull request
+
+>un pull request es una solicitud para extraer los cambios de una rama hacias otra, pueden ser del mismo repositorio o en distintos. de esta manera se permite verificar cambios antes de aplicarse en main.
